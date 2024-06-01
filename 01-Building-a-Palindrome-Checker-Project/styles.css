@@ -1,0 +1,104 @@
+:root {
+    --main-background-color: #0a0a23;
+    --cont-background-color: #0a0a23;
+    --main-font-color: #ffffff;
+    --hero-background-color: #0f0f38;
+    --hero-box-shadow: #007bff;
+    --text-input-color: #0f0f0f;
+    --text-input-bottom: #ffffff;
+    --check-btn-background-color: #007bff;
+    --check-btn-border-color: #007bff;
+    --legend-background-color: #0f0f45;
+    --legend-font-color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    font-family:'Arial', Times, serif;
+    position: relative;
+    text-align: center;
+    color: var(--main-font-color);
+}
+
+body {
+    margin: 0;
+}
+
+#bg-image {
+    position: absolute;
+    background-color: var(--main-background-color);
+    background-image: var(--main-background-image);
+    height: 100%;
+    width: 100%;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+#container {
+    min-height: 100vh;
+    min-width: 100px;
+    max-width: 700px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cont-background-color);
+    margin: 0 auto;
+}
+
+#heading {
+    color: var(--heading-font-color);
+    margin-top: 20%;
+}
+
+#hero {
+    min-height: 250px;
+    height: fit-content;
+    border-radius: 30px;
+    box-shadow: 0px 10px 5px var(--hero-box-shadow);
+    background-color: var(--hero-background-color);
+}
+
+#navigator {
+    /* height: 30px; */
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#text-input {
+    height: 60px;
+    width: 330px;
+    font-size: 40px;
+    border: none;
+    color: var(--text-input-font-color);
+    border-bottom: 5px solid var(--text-input-bottom);
+    background-color: var(--text-input-color);
+}
+
+#text-input:focus {
+    outline: none;
+}
+
+#check-btn {
+    height: 40px;
+    width: 80px;
+    font-size: 25px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border-color: var(--check-btn-border-color);
+    background-color: var(--check-btn-background-color);
+}
+
+#result {
+    font-size: 30px;
+    margin: 30px auto 0;
+    color: var(--result-text-color);
+}
+
+#legend {
+    font-size: 20px;
+    width: 400px;
+    padding: 10px;
+    margin: 40px auto;
+    color: var(--legend-font-color);
+    background-color: var(--legend-background-color);
+}
