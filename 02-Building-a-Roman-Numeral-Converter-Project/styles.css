@@ -1,0 +1,123 @@
+:root {
+    --background-main: #003C43;
+    --main-text-color: #E3FEF7;
+    --hero-background: #135D66;
+    --hero-border: #E3FEF7;
+    --input-background: #77B0AA;
+    --input-font-color: #ffffff;
+    --input-hover: #598d88;
+    --button-background: #3a575a;
+    --button-hover-background: #283a3c;
+    --output-background: #135D66;
+    --output-border: #E3FEF7;
+    --output-text-color: greenyellow;
+}
+
+* {
+    font-family: "Libre Caslon", "Times New Roman", sans-serif;
+    color: var(--main-text-color);
+}
+
+html,
+body {
+    background-color: var(--background-main);
+}
+
+
+#container {
+    max-width: 600px;
+    /* max-height: 480px; */
+    height: 420px;
+    margin: 18vh auto;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+#heading {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    /* padding-bottom: 0; */
+    /* background-color: red; */
+}
+
+#hero {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--hero-border);
+    background-color: var(--hero-background);
+}
+
+#number {
+    height: 50px;
+    width: 80%;
+    font-size: 35px;
+    padding: 2px 5px;
+    margin: 10% auto 30px;
+    color: var(--input-font-color);
+    border: 1px solid #0b4c55;
+    background-color: var(--input-background);
+}
+
+#number:hover {
+    background-color: var(--input-hover);
+}
+
+#number:focus {
+    outline: 2px solid var(--input-font-color);
+}
+
+#convert-btn {
+    height: 40px;
+    width: 120px;
+    font-size: 25px;
+    margin: 0 auto;
+    background-color: var(--button-background);
+    /* border: 1px solid var(--button-border); */
+}
+
+#convert-btn:hover {
+    background-color: var(--button-hover-background);
+}
+
+.hidden {
+    display: none;
+}
+
+#output {
+    /* max-height: fit-content; */
+    min-height: 60px;
+    height: fit-content;
+    width: 400px;
+    /* width: fit-content; */
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--output-text-color);
+    margin: 40px auto;
+    /* overflow: scroll; */
+    background-color: var(--output-background);
+    border: 3px solid var(--output-border);
+}
+
+.changeForAlert {
+    color: rgb(119, 2, 2) !important;
+    font-weight: normal !important;
+    background-color: #D6589F !important;
+    border: 3px solid #D20062 !important;
+}
+
+@media (max-width: 340px) {
+    #hero {
+        width: 300px;
+    }
+
+    #output {
+        max-width: 300px;
+        overflow: scroll;
+    }
+}
