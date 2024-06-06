@@ -1,0 +1,106 @@
+/* universal */
+* {
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+/* container */
+
+#container {
+    min-width: 480px;
+    min-height: 800px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #5885AF;
+}
+
+#heading {
+    font-size: 40px;
+    font-weight: 600;
+    color: #B1D4E0;
+    margin-bottom: 20px;
+}
+
+#phone {
+    min-height: 65vh;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #274472;
+}
+
+/* form */
+#validation-space {
+    height: 25vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 20px;
+    border-radius: 10px;
+    background-color: #41729F;
+}
+
+#user-input {
+    width: 250px;
+    height: 50px;
+    font-size: 35px;
+    margin-top: 2vh;
+    margin-bottom: 0.8vh;
+    color: #0C2D48;
+    border-radius: 5px;
+    background-color: #C3E0E5;
+}
+
+#user-input:focus {
+    outline: 2px solid #ECF87F;
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    color: #ffeeff;
+    font-size: 20px;
+    margin-top: 1vh;
+    border-radius: 8px;
+}
+
+#check-btn {
+    background-color: #18A558;
+    border-color: #116530;  
+}
+
+#check-btn:hover {
+    background-color: #116530;
+}
+
+#clear-btn {
+    background-color: #f54147;
+    border-color: rgb(144, 4, 4);
+}
+
+#clear-btn:hover {
+    background-color: #dd0631;
+}
+
+#results-div {
+    height: 30vh;
+    width: 90%;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #0C2D48;
+    overflow: scroll;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #C3E0E5;
+}
