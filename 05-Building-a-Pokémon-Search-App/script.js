@@ -85,30 +85,6 @@ const showPokemonData = async (searchQuery) => {
 }
 
 const searchSanitize = query => {
-    /*
-    take input, and check if number or name
-    let add male female symbol, letter or word at end
-    sanitize the input to lowercase, dashed sep
-    fetch with api, store and show results
-
-    if name or id invalid give alert
-    */
-
-    /*
-    possible input:
-    10
-    pikachu
-    pikachu m
-    pikachu male
-    pikachu ♀ or ♂
-    
-    PiKachU
-    pikachu-m
-    pikachu-male
-    pikachu20
-
-    */
-
     try {
         const digRegex = /^\d+$/g;
         const charRegex = /^[A-Za-z]+/g;
@@ -136,7 +112,6 @@ const searchSanitize = query => {
     } catch (err) {
         alert("Something wrong in the name: ", err);
     }
-
 }
 
 const displayAvblPokemonData = async () => {

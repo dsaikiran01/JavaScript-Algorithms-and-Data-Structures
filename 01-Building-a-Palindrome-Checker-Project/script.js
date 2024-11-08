@@ -1,5 +1,6 @@
 const checkButton = document.getElementById("check-btn");
 const result = document.getElementById("result");
+
 //Algo:
 // step-1: make the string lowercase
 // step-2: clean up the string
