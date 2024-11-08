@@ -1,23 +1,23 @@
 :root {
-    --main-background: #121212; /* Dark background */
-    --main-font-color: #E0E0E0; /* Light text color for general text */
-    --container-color: #1F1F1F; /* Slightly lighter background for containers */
-    --container-shadow: rgba(0, 0, 0, 0.7); /* Darker shadow for contrast */
-    --font-color-heading: #FF9800; /* Vibrant color for headings */
-    --input-ele-color: #333333; /* Dark input background */
-    --button-bg-color: #6200EE; /* Bright, vibrant button color */
-    --button-border-color: #BB86FC; /* Lighter button border for contrast */
-    --button-hover-color: #3700B3; /* Darker hover effect */
-    --button-font-color: #FFFFFF; /* Button text color */
-    --search-area-color: #333333; /* Dark background for search area */
-    --stats-area-color: #2C2C2C; /* Dark stats area background */
-    --stats-table-head: #03DAC6; /* Light cyan color for table headers */
-    --stats-table-elements: #E0E0E0; /* Light text color for stats */
-    --avbl-table-bg: #333333; /* Dark background for available Pokémon table */
-    --avbl-table-shadow: rgba(0, 0, 0, 0.5); /* Darker table shadow */
-    --avbl-table-head: #03DAC6; /* Same light cyan for table headers */
-    --avbl-table-content: #E0E0E0; /* Light text color for table content */
-    --avbl-table-font: #E0E0E0; /* Light text color for table font */
+    --main-background: #121212; 
+    --main-font-color: #E0E0E0; 
+    --container-color: #1F1F1F; 
+    --container-shadow: rgba(0, 0, 0, 0.7); 
+    --font-color-heading: #FF9800; 
+    --input-ele-color: #333333; 
+    --button-bg-color: #6200EE; 
+    --button-border-color: #BB86FC; 
+    --button-hover-color: #3700B3; 
+    --button-font-color: #FFFFFF; 
+    --search-area-color: #333333; 
+    --stats-area-color: #2C2C2C; 
+    --stats-table-head: #03DAC6; 
+    --stats-table-elements: #E0E0E0; 
+    --avbl-table-bg: #333333; 
+    --avbl-table-shadow: rgba(0, 0, 0, 0.5); 
+    --avbl-table-head: #03DAC6; 
+    --avbl-table-content: #E0E0E0; 
+    --avbl-table-font: #E0E0E0; 
 }
 
 * {
@@ -42,7 +42,7 @@ body {
     text-align: center;
     font-size: 3rem;
     margin: 40px auto 30px;
-    color: var(--font-color-heading); /* Light color for heading */
+    color: var(--font-color-heading); 
 }
 
 #container {
@@ -147,7 +147,7 @@ body {
 tr {
     font-size: 20px;
     height: 38px;
-    color: var(--stats-table-head); /* Color for header text */
+    color: var(--stats-table-head); 
 }
 
 #avbl-pokemons-display {

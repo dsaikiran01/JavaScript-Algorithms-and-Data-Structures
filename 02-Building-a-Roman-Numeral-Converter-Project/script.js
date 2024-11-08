@@ -18,18 +18,6 @@ const numerals = {
     I: 1
 };
 
-// let result = {
-//     value: 0,
-//     numeral: ""
-// }
-
-// const changeBackground = () => {
-//     // document.documentElement.style.setProperty("--output-background", "#D6589F");
-//     // document.documentElement.style.setProperty("--output-border", "#D20062");
-//     document.documentElement.style.setProperty("--output-text-color", "red");
-//     // document.documentElement.style.setProperty("fon", "5px");
-// }
-
 const processNumeral = (result, symbol, symbolValue) => {
     while (result.value >= symbolValue) {
         result.numeral += symbol;
@@ -60,17 +48,12 @@ const convertToRomanNumeral = () => {
             numeral: ""
         }
 
-        // console.log("Entered");
         for (const element in numerals) {
-            // console.log("element: ", element);
-            // console.log("symbol value: ", numerals[element]);
             processNumeral(result, element, numerals[element]);
-            // console.log("running");
         }
-        // console.log(result.numeral);
+
         outputBtn.classList.remove("changeForAlert");
         outputBtn.textContent = result.numeral;
-        // outputBtn.textContent = calculateRomanNumeral(inputBtnNum);
     }
 }
 
