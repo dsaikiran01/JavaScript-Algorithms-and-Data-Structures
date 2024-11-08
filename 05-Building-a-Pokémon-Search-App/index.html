@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Search</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="heading">Pokemon Search App</div>
+    <div id="holder">
+        <div id="container">
+            <form id="search-area">
+                <p id="search-text">Enter a Pokemon Name or ID:</p>
+                <input type="text" id="search-input" required>
+                <button id="search-button">Search</button>
+            </form>
+            <div id="pokemon-display-area">
+                <p id="pokemon-name"></p>
+                <p id="pokemon-id"></p>
+                <p id="weight"></p>
+                <p id="height"></p>
+                <div id="image"></div>
+                <div id="types"></div>
+                <table id="pokemon-stats">
+                    <tr>
+                        <th>Base</th>
+                        <th>Stats</th>
+                    </tr>
+                    <tr>
+                        <td>HP</td>
+                        <td id="hp"></td>
+                    </tr>
+                    <tr>
+                        <td>Attack</td>
+                        <td id="attack"></td>
+                    </tr>
+                    <tr>
+                        <td>Defense</td>
+                        <td id="defense"></td>
+                    </tr>
+                    <tr>
+                        <td>Spl. Attack</td>
+                        <td id="special-attack"></td>
+                    </tr>
+                    <tr>
+                        <td>Spl. Defense</td>
+                        <td id="special-defense"></td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td id="speed"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="avbl-pokemons-display">
+            <div id="total-pokemon">
+                <p>Total</p>
+                <p id="total-pokemon-count"></p>
+            </div>
+            <div id="avbl-table-space">
+                <table id="avbl-pokemon-table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

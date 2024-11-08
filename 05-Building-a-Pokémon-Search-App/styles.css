@@ -1,0 +1,197 @@
+:root {
+    --main-background: #121212; /* Dark background */
+    --main-font-color: #E0E0E0; /* Light text color for general text */
+    --container-color: #1F1F1F; /* Slightly lighter background for containers */
+    --container-shadow: rgba(0, 0, 0, 0.7); /* Darker shadow for contrast */
+    --font-color-heading: #FF9800; /* Vibrant color for headings */
+    --input-ele-color: #333333; /* Dark input background */
+    --button-bg-color: #6200EE; /* Bright, vibrant button color */
+    --button-border-color: #BB86FC; /* Lighter button border for contrast */
+    --button-hover-color: #3700B3; /* Darker hover effect */
+    --button-font-color: #FFFFFF; /* Button text color */
+    --search-area-color: #333333; /* Dark background for search area */
+    --stats-area-color: #2C2C2C; /* Dark stats area background */
+    --stats-table-head: #03DAC6; /* Light cyan color for table headers */
+    --stats-table-elements: #E0E0E0; /* Light text color for stats */
+    --avbl-table-bg: #333333; /* Dark background for available Pokémon table */
+    --avbl-table-shadow: rgba(0, 0, 0, 0.5); /* Darker table shadow */
+    --avbl-table-head: #03DAC6; /* Same light cyan for table headers */
+    --avbl-table-content: #E0E0E0; /* Light text color for table content */
+    --avbl-table-font: #E0E0E0; /* Light text color for table font */
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--main-font-color);
+    font-family: 'Times New Roman', Arial, Times;
+}
+
+html,
+body {
+    margin: 0;
+    background-color: var(--main-background);
+}
+
+#holder {
+    display: flex;
+    max-width: fit-content;
+    margin: auto;
+}
+
+#heading {
+    text-align: center;
+    font-size: 3rem;
+    margin: 40px auto 30px;
+    color: var(--font-color-heading); /* Light color for heading */
+}
+
+#container {
+    max-width: 600px;
+    width: 40vw;
+    height: 70vh;
+    background-color: var(--container-color);
+    border: 1px solid #444;
+    box-shadow: 10px 5px 5px var(--container-shadow);
+    margin: auto;
+}
+
+#search-text {
+    text-align: center;
+}
+
+#search-input {
+    font-size: 20px;
+    height: 35px;
+    min-width: 200px;
+    width: 20vw;
+    background-color: var(--input-ele-color);
+    border: 1px solid var(--button-border-color);
+    margin-left: 3vw;
+    margin-right: 20px;
+    color: var(--main-font-color);
+}
+
+#search-input:focus {
+    border: none;
+    outline: none;
+}
+
+#search-button {
+    height: 35px;
+    min-width: 100px;
+    width: 5vw;
+    background-color: var(--button-bg-color);
+    border: 1px solid var(--button-border-color);
+    border-radius: 10px;
+    color: var(--button-font-color);
+}
+
+#search-button:hover {
+    background-color: var(--button-hover-color);
+}
+
+#pokemon-display-area {
+    height: 85%;
+    background-color: var(--stats-area-color);
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#pokemon-name {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px 20px;
+}
+
+#pokemon-id,
+#weight,
+#height {
+    font-size: 18px;
+    margin: 5px 20px;
+}
+
+#image {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+#types {
+    margin: 5px 20px;
+    overflow-x: scroll;
+    height: 50px;
+    display: flex;
+}
+
+.type-box {
+    font-size: 20px;
+    color: #fff;
+    height: 30px;
+    text-align: center;
+    min-width: calc(fit-content + 20px);
+    width: 100px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: auto 5px;
+}
+
+#pokemon-stats {
+    width: calc(100% - 40px);
+    text-align: left;
+    margin: auto;
+    color: var(--stats-table-elements);
+}
+
+#pokemon-stats>th,
+tr {
+    font-size: 20px;
+    height: 38px;
+    color: var(--stats-table-head); /* Color for header text */
+}
+
+#avbl-pokemons-display {
+    max-width: 300px;
+    width: 20vw;
+    height: 30vh;
+    border: 1px solid var(--avbl-table-bg);
+    background-color: var(--avbl-table-bg);
+    box-shadow: 10px 5px 5px var(--avbl-table-shadow);
+    margin: auto;
+    margin-left: 20px;
+}
+
+#avbl-table-space {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+#avbl-pokemon-table {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: var(--avbl-table-font);
+    background-color: var(--avbl-table-bg);
+}
+
+#total-pokemon {
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    font-size: 25px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--avbl-table-bg);
+    border-bottom: 1px solid #111;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+#total-pokemon>p {
+    margin: 0;
+}
+
+#total-pokemon-count {
+    margin: 0;
+}
