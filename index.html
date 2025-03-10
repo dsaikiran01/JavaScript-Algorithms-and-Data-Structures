@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Algorithms and Data Structures Projects</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #222;
+            --btn-bg: #007BFF;
+            --btn-text: #ffffff;
+            --btn-hover: #0056b3;
+        }
+
+        body.dark-mode {
+            --bg-color: #222;
+            --text-color: #fff;
+            --btn-bg: #444;
+            --btn-text: #fff;
+            --btn-hover: #666;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .description {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .project-button {
+            width: 90%;
+            max-width: 400px;
+            padding: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: var(--btn-bg);
+            color: var(--btn-text);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        .project-button:hover {
+            background-color: var(--btn-hover);
+            transform: scale(1.05);
+        }
+
+        #theme-icon {
+            font-size: 1.5em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .fa-sun {
+            color: #f39c12;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>JavaScript Algorithms and Data Structures Projects</h1>
+    <p class="description">Explore the JavaScript Algorithms based projects I've completed as part of the freeCodeCamp JavaScript Algorithms and Data Structures certification. </p>
+    <p class="description">Click the buttons below to explore!</p>
+
+    <label for="checkbox" class="checkbox-label" onclick="toggleTheme()">
+        <i class="fas fa-sun" id="theme-icon"></i>
+    </label>
+
+    <div class="projects">
+        <button class="project-button" onclick="location.href='01-Building-a-Palindrome-Checker-Project/'">Palindrome Checker</button>
+        <button class="project-button" onclick="location.href='02-Building-a-Roman-Numeral-Converter-Project/'">Roman Numeral Converter</button>
+        <button class="project-button" onclick="location.href='03-Building-a-Telephone-Number-Validator/'">Telephone Number Validator</button>
+        <button class="project-button" onclick="location.href='04-Building-a-Cash-Register-Project/'">Cash Register</button>
+        <button class="project-button" onclick="location.href='05-Building-a-Pokémon-Search-App/'">Pokémon Search App</button>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle("dark-mode");
+
+            // Toggle the icon between sun and moon
+            const icon = document.getElementById("theme-icon");
+            if (document.body.classList.contains("dark-mode")) {
+                icon.classList.remove("fa-sun");
+                icon.classList.add("fa-moon");
+            } else {
+                icon.classList.remove("fa-moon");
+                icon.classList.add("fa-sun");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
